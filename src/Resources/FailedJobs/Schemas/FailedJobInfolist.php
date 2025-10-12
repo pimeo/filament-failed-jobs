@@ -26,11 +26,16 @@ class FailedJobInfolist
                     ->dateTime()
                     ->placeholder('-'),
 
-                TextEntry::make('exception'),
-
                 TextEntry::make('payload')
                     ->formatStateUsing(function ($state) {
-                        return '<pre style="overflow-x: auto">' . htmlspecialchars(json_encode(json_decode($state, true), JSON_PRETTY_PRINT)) . '</pre>';
+                        return '<pre style="overflow-x: auto; line-height: 2">' . htmlspecialchars(json_encode(json_decode($state, true), JSON_PRETTY_PRINT)) . '</pre>';
+                    })->html()
+                    ->columnSpanFull(),
+
+                TextEntry::make('exception')
+                    ->columnSpanFull()
+                    ->formatStateUsing(function ($state) {
+                        return '<div style="line-height: 2">' . nl2br($state) . '</div>';
                     })->html(),
             ]);
     }
