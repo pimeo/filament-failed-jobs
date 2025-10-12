@@ -2,6 +2,10 @@
 
 All notable changes to `binarybuilds/filament-failed-jobs` will be documented in this file.
 
+## v1.1.0 - 2025-10-12
+
+**Full Changelog**: https://github.com/binarybuilds/filament-failed-jobs/compare/v1.0.0...v1.1.0
+
 ## v1.0.0 - 2025-10-12
 
 **Full Changelog**: https://github.com/binarybuilds/filament-failed-jobs/commits/v1.0.o
