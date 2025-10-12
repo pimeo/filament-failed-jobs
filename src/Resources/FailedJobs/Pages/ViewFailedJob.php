@@ -2,10 +2,10 @@
 
 namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages;
 
-use Filament\Resources\Pages\ViewRecord;
 use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobAction;
 use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobAction;
 use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\FailedJobResource;
+use Filament\Resources\Pages\ViewRecord;
 
 class ViewFailedJob extends ViewRecord
 {

@@ -3,15 +3,15 @@
 namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs;
 
 use BackedEnum;
-use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
-use Filament\Support\Icons\Heroicon;
-use Filament\Tables\Table;
 use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages\ListFailedJobs;
 use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages\ViewFailedJob;
 use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Schemas\FailedJobInfolist;
 use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Tables\FailedJobsTable;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Support\Icons\Heroicon;
+use Filament\Tables\Table;
 
 class FailedJobResource extends Resource
 {

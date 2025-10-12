@@ -2,10 +2,10 @@
 
 namespace BinaryBuilds\FilamentFailedJobs;
 
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\FailedJobResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Tables\Enums\FiltersLayout;
-use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\FailedJobResource;
 
 class FilamentFailedJobsPlugin implements Plugin
 {

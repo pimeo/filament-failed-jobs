@@ -2,9 +2,9 @@
 
 namespace BinaryBuilds\FilamentFailedJobs\Actions;
 
+use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 use Filament\Actions\Action;
 use Filament\Support\Icons\Heroicon;
-use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 
 class DeleteJobAction extends Action
 {

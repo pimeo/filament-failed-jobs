@@ -2,6 +2,12 @@
 
 namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Tables;
 
+use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobsBulkAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobsBulkAction;
+use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsPlugin;
+use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\ViewAction;
 use Filament\Forms\Components\DatePicker;
@@ -11,12 +17,6 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobAction;
-use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobsBulkAction;
-use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobAction;
-use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobsBulkAction;
-use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsPlugin;
-use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 
 class FailedJobsTable
 {

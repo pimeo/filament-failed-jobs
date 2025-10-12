@@ -2,9 +2,9 @@
 
 namespace BinaryBuilds\FilamentFailedJobs\Actions;
 
+use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsPlugin;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
-use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsPlugin;
 
 trait ManagesJobs
 {
