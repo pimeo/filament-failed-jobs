@@ -1,13 +1,13 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs;
+namespace BinaryBuilds\FilamentFailedJobs;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Tables\Enums\FiltersLayout;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\FailedJobResource;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\FailedJobResource;
 
-class FailedJobsPlugin implements Plugin
+class FilamentFailedJobsPlugin implements Plugin
 {
     public bool $horizon = false;
 
@@ -22,7 +22,7 @@ class FailedJobsPlugin implements Plugin
         return 'failed-jobs';
     }
 
-    public function usingHorizon(bool $horizon = true): FailedJobsPlugin
+    public function usingHorizon(bool $horizon = true): FilamentFailedJobsPlugin
     {
         $this->horizon = $horizon;
 
@@ -34,21 +34,21 @@ class FailedJobsPlugin implements Plugin
         return $this->horizon;
     }
 
-    public function hideConnectionOnIndex(bool $hideConnectionOnIndex = true): FailedJobsPlugin
+    public function hideConnectionOnIndex(bool $hideConnectionOnIndex = true): FilamentFailedJobsPlugin
     {
         $this->hideConnectionOnIndex = $hideConnectionOnIndex;
 
         return $this;
     }
 
-    public function hideQueueOnIndex(bool $hideQueueOnIndex = true): FailedJobsPlugin
+    public function hideQueueOnIndex(bool $hideQueueOnIndex = true): FilamentFailedJobsPlugin
     {
         $this->hideQueueOnIndex = $hideQueueOnIndex;
 
         return $this;
     }
 
-    public function filtersLayout(FiltersLayout $layout): FailedJobsPlugin
+    public function filtersLayout(FiltersLayout $layout): FilamentFailedJobsPlugin
     {
         $this->filtersLayout = $layout;
 

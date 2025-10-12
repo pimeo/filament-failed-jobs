@@ -1,6 +1,6 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Actions;
+namespace BinaryBuilds\FilamentFailedJobs\Actions;
 
 use Filament\Actions\BulkAction;
 use Filament\Support\Icons\Heroicon;

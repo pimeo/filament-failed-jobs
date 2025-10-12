@@ -1,14 +1,14 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Pages;
+namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\Facades\Artisan;
-use SrinathReddyDudi\FailedJobs\Models\FailedJob;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\FailedJobResource;
+use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\FailedJobResource;
 
 class ListFailedJobs extends ListRecords
 {

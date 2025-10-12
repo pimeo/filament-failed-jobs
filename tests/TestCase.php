@@ -1,6 +1,6 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Tests;
+namespace BinaryBuilds\FilamentFailedJobs\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use SrinathReddyDudi\FailedJobs\FailedJobsServiceProvider;
+use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -25,7 +25,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'SrinathReddyDudi\\FailedJobs\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'BinaryBuilds\\FailedJobs\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -44,7 +44,7 @@ class TestCase extends Orchestra
             SupportServiceProvider::class,
             TablesServiceProvider::class,
             WidgetsServiceProvider::class,
-            FailedJobsServiceProvider::class,
+            FilamentFailedJobsServiceProvider::class,
         ];
     }
 

@@ -1,9 +1,9 @@
 # A Filament Plugin to Retry and manage failed jobs
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/srinathreddydudi/failed-jobs.svg?style=flat-square)](https://packagist.org/packages/srinathreddydudi/failed-jobs)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/srinathreddydudi/failed-jobs/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/srinathreddydudi/failed-jobs/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/srinathreddydudi/failed-jobs/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/srinathreddydudi/failed-jobs/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/srinathreddydudi/failed-jobs.svg?style=flat-square)](https://packagist.org/packages/srinathreddydudi/failed-jobs)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/binarybuilds/filament-failed-jobs.svg?style=flat-square)](https://packagist.org/packages/binarybuilds/filament-failed-jobs)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/binarybuilds/filament-failed-jobs/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/binarybuilds/filament-failed-jobs/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/binarybuilds/filament-failed-jobs/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/binarybuilds/filament-failed-jobs/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/binarybuilds/filament-failed-jobs.svg?style=flat-square)](https://packagist.org/packages/binarybuilds/filament-failed-jobs)
 
 This plugin provides a failed jobs resource which can be used to retry and manage laravel failed queue jobs.
 
@@ -14,7 +14,7 @@ This plugin provides a failed jobs resource which can be used to retry and manag
 You can install the plugin via composer:
 
 ```bash
-composer require srinathreddydudi/failed-jobs
+composer require binarybuilds/filament-failed-jobs
 ```
 
 ## Usage

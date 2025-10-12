@@ -1,6 +1,6 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Tables;
+namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\ViewAction;
@@ -11,12 +11,12 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use SrinathReddyDudi\FailedJobs\Actions\DeleteJobAction;
-use SrinathReddyDudi\FailedJobs\Actions\DeleteJobsBulkAction;
-use SrinathReddyDudi\FailedJobs\Actions\RetryJobAction;
-use SrinathReddyDudi\FailedJobs\Actions\RetryJobsBulkAction;
-use SrinathReddyDudi\FailedJobs\FailedJobsPlugin;
-use SrinathReddyDudi\FailedJobs\Models\FailedJob;
+use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobsBulkAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobsBulkAction;
+use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsPlugin;
+use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 
 class FailedJobsTable
 {
@@ -28,9 +28,9 @@ class FailedJobsTable
                     ->numeric()
                     ->sortable(),
 
-                FailedJobsPlugin::get()->hideConnectionOnIndex ? null : TextColumn::make('connection')->searchable(),
+                FilamentFailedJobsPlugin::get()->hideConnectionOnIndex ? null : TextColumn::make('connection')->searchable(),
 
-                FailedJobsPlugin::get()->hideQueueOnIndex ? null : TextColumn::make('queue')->searchable(),
+                FilamentFailedJobsPlugin::get()->hideQueueOnIndex ? null : TextColumn::make('queue')->searchable(),
 
                 TextColumn::make('payload')->label('Job')
                     ->formatStateUsing(function ($state) {
@@ -41,7 +41,7 @@ class FailedJobsTable
 
                 TextColumn::make('failed_at')->searchable(),
             ]))
-            ->filters(self::getFiltersForIndex(), FailedJobsPlugin::get()->getFiltersLayout())
+            ->filters(self::getFiltersForIndex(), FilamentFailedJobsPlugin::get()->getFiltersLayout())
             ->recordActions([
                 RetryJobAction::make()->iconButton()->tooltip(__('Retry Job')),
                 ViewAction::make()->iconButton()->tooltip(__('View Job')),

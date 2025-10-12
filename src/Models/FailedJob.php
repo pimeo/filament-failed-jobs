@@ -1,6 +1,6 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Models;
+namespace BinaryBuilds\FilamentFailedJobs\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

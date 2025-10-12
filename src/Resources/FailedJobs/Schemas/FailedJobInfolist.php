@@ -1,6 +1,6 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Schemas;
+namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;

@@ -1,11 +1,11 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Pages;
+namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages;
 
 use Filament\Resources\Pages\ViewRecord;
-use SrinathReddyDudi\FailedJobs\Actions\DeleteJobAction;
-use SrinathReddyDudi\FailedJobs\Actions\RetryJobAction;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\FailedJobResource;
+use BinaryBuilds\FilamentFailedJobs\Actions\DeleteJobAction;
+use BinaryBuilds\FilamentFailedJobs\Actions\RetryJobAction;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\FailedJobResource;
 
 class ViewFailedJob extends ViewRecord
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Resources\FailedJobs;
+namespace BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs;
 
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
-use SrinathReddyDudi\FailedJobs\Models\FailedJob;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Pages\ListFailedJobs;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Pages\ViewFailedJob;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Schemas\FailedJobInfolist;
-use SrinathReddyDudi\FailedJobs\Resources\FailedJobs\Tables\FailedJobsTable;
+use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages\ListFailedJobs;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Pages\ViewFailedJob;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Schemas\FailedJobInfolist;
+use BinaryBuilds\FilamentFailedJobs\Resources\FailedJobs\Tables\FailedJobsTable;
 
 class FailedJobResource extends Resource
 {
@@ -26,7 +26,8 @@ class FailedJobResource extends Resource
 
     public static function table(Table $table): Table
     {
-        return FailedJobsTable::configure($table);
+        return FailedJobsTable::configure($table)
+            ->defaultSort('id', 'desc');
     }
 
     public static function getPages(): array

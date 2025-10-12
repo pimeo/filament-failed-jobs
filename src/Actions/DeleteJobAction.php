@@ -1,10 +1,10 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Actions;
+namespace BinaryBuilds\FilamentFailedJobs\Actions;
 
 use Filament\Actions\Action;
 use Filament\Support\Icons\Heroicon;
-use SrinathReddyDudi\FailedJobs\Models\FailedJob;
+use BinaryBuilds\FilamentFailedJobs\Models\FailedJob;
 
 class DeleteJobAction extends Action
 {

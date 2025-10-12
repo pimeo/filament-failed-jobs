@@ -1,10 +1,10 @@
 <?php
 
-namespace SrinathReddyDudi\FailedJobs\Actions;
+namespace BinaryBuilds\FilamentFailedJobs\Actions;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
-use SrinathReddyDudi\FailedJobs\FailedJobsPlugin;
+use BinaryBuilds\FilamentFailedJobs\FilamentFailedJobsPlugin;
 
 trait ManagesJobs
 {
@@ -16,7 +16,7 @@ trait ManagesJobs
     public function deleteJobs(Collection $jobs): void
     {
         foreach ($jobs as $job) {
-            if (FailedJobsPlugin::get()->isUsingHorizon()) {
+            if (FilamentFailedJobsPlugin::get()->isUsingHorizon()) {
                 Artisan::call('horizon:forget ' . $job->uuid);
             } else {
                 Artisan::call('queue:forget ' . $job->uuid);

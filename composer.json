@@ -1,13 +1,13 @@
 {
-    "name": "srinathreddydudi/failed-jobs",
+    "name": "binarybuilds/filament-failed-jobs",
     "description": "A filament package to easily retry and prune failed jobs",
     "keywords": [
-        "srinathreddydudi", "laravel", "failed jobs", "queued jobs", "filament"
+        "binarybuilds", "laravel", "failed jobs", "queued jobs", "filament"
     ],
-    "homepage": "https://github.com/srinathreddydudi/failed-jobs",
+    "homepage": "https://github.com/binarybuilds/filament-failed-jobs",
     "support": {
-        "issues": "https://github.com/srinathreddydudi/failed-jobs/issues",
-        "source": "https://github.com/srinathreddydudi/failed-jobs"
+        "issues": "https://github.com/binarybuilds/filament-failed-jobs/issues",
+        "source": "https://github.com/binarybuilds/filament-failed-jobs"
     },
     "license": "MIT",
     "authors": [
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SrinathReddyDudi\\FailedJobs\\": "src/"
+            "BinaryBuilds\\FilamentFailedJobs\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SrinathReddyDudi\\FailedJobs\\Tests\\": "tests/"
+            "BinaryBuilds\\FilamentFailedJobs\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -55,7 +55,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SrinathReddyDudi\\FailedJobs\\FailedJobsServiceProvider"
+                "BinaryBuilds\\FilamentFailedJobs\\FilamentFailedJobsServiceProvider"
             ]
         }
     },
