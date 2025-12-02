@@ -59,7 +59,7 @@ class FailedJobsTable
     {
         $jobs = FailedJob::query()
             ->select(['connection', 'queue'])
-            ->selectRaw("payload->>'$.displayName' AS job")
+            ->selectRaw("JSON_UNQUOTE(JSON_EXTRACT(payload, '$.displayName')) AS job")
             ->get();
 
         $connections = $jobs->pluck('connection', 'connection')->map(fn ($conn) => ucfirst($conn))->toArray();
@@ -77,7 +77,7 @@ class FailedJobsTable
                     return $query
                         ->when(
                             $data['job'],
-                            fn (Builder $query, $job): Builder => $query->whereRaw("payload->>'$.displayName' = ?", [$job]),
+                            fn (Builder $query, $job): Builder => $query->whereRaw("JSON_UNQUOTE(JSON_EXTRACT(payload, '$.displayName')) = ?", [$job]),
                         );
                 }),
             Filter::make('failed_at')
