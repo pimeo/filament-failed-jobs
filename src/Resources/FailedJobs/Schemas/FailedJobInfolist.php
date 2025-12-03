@@ -27,7 +27,7 @@ class FailedJobInfolist
                                         TextEntry::make('exception')
                                             ->hiddenLabel()
                                             ->formatStateUsing(function ($state) {
-                                                return '<pre class="whitespace-pre-wrap break-words text-sm font-mono bg-gray-50 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto">' . htmlspecialchars($state) . '</pre>';
+                                                return '<pre class="whitespace-pre-wrap break-words text-sm font-mono bg-gray-50 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto" style="overflow-x: auto">' . htmlspecialchars($state) . '</pre>';
                                             })
                                             ->html(),
                                     ]),
@@ -40,7 +40,7 @@ class FailedJobInfolist
                                         TextEntry::make('payload')
                                             ->hiddenLabel()
                                             ->formatStateUsing(function ($state) {
-                                                return '<pre class="whitespace-pre-wrap break-words text-sm font-mono bg-gray-50 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto">' . htmlspecialchars(json_encode(json_decode($state, true), JSON_PRETTY_PRINT)) . '</pre>';
+                                                return '<pre class="whitespace-pre-wrap break-words text-sm font-mono bg-gray-50 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto" style="overflow-x: auto">' . htmlspecialchars(json_encode(json_decode($state, true), JSON_PRETTY_PRINT)) . '</pre>';
                                             })
                                             ->html(),
                                     ]),
